@@ -6,14 +6,26 @@ body {
     color: #333;
 }
 
+@font-face {
+    font-family: "Alt";
+    src: url(./SourceCodePro-VariableFont_wght.ttf);
+}
+
+
+
 *,
 *:before,
 *:after{
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6,p{
     margin: 0;
+    font-family: "Alt";
+}
+
+h1{
+    font-family: 'PT Serif', serif;
 }
 
 .container {
@@ -186,6 +198,31 @@ a {
     width: 100%;
 }
 
+@keyframes rotate {
+    to {
+        stroke-dashoffset: -251px;
+    }
+}
+
+circle {
+    animation: rotate 2s linear infinite;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.footer__link {
+    margin-right: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.footer__link:hover{
+    margin-right: 10px;
+    font-size: 30px;
+    color: blue;
+}
 
 
 
