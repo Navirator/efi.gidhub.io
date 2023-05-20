@@ -9,6 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <!-- Connect JQuery -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Connect JQueryUI -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <!-- Connect Style -->
+    <link rel="stylesheet" href="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https:/resources/demos/style.css">
+
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!--For Fotorama-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 <body>
 
@@ -124,6 +144,31 @@
         <a class="footer__link" href="https://discord.gg/NNMPQDzr">
             <i class="bx bxl-discord-alt"></i>
         </a>
+    </div>
+
+    <div class="container">
+        <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+            <div id="custom-handle" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 2%;">2</div>
+        </div>
+
+        <form action="#">
+            <fieldset>
+                <label for="speed-button">Виберітькомп'ютер</label>
+                <select name="speed" id="speed" style="display: none;">
+                    <option selected="selected">настільні (desktop)</option>
+                    <option>портативні (notebook)</option>
+                    <option>кишенькові (palmtop)</option>
+                </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="speed-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="speed-menu" aria-haspopup="true" style="width: 200px;" aria-activedescendant="ui-id-3" aria-labelledby="ui-id-3" aria-disabled="false"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">Java</span></span>
+            </fieldset>
+        </form>
+
+        <div class="fotorama">
+            <img src="https://b-pro.com.ua/assets/cache/images/komputerne-obladnanny/kompyuter-x-0fa.jpg">
+            <img src="https://umschool.com.ua/assets/cache/images/x-noutbuk-i-3.b73.jpg">
+            <img src="https://uawest.com/image/cache/product_images/original_images/6072_0-700x700.jpg">
+            <img src="https://ae01.alicdn.com/kf/HTB1HCTrh7.HL1JjSZFuq6x8dXXau/New-PIPO-X9S-Mini-PC-Intel-Cherry-Trail-Z8350-Windows-10-Android-4-4-Dual-OS.jpg">
+            <img src="https://img.ktc.ua/img/core/6/7c567771976fc8f9bdfd2475ec3e3a49.jpg">
+        </div>
     </div>
 </div>
 </section>
