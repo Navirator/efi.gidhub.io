@@ -29,6 +29,33 @@
     <!--For Fotorama-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <script>
+        $(function () {
+            var handle = $("#custom-handle");
+            $("#slider").slider({
+                create: function () {
+                    handle.text($(this).slider("value"));
+                },
+                slide: function (event, ui) {
+                    handle.text(ui.value);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#speed").selectmenu();
+
+            $("#files").selectmenu();
+
+            $("#number")
+                .selectmenu()
+                .selectmenu("menuWidget")
+                .addClass("overflow");
+        });
+    </script>
 </head>
 <body>
 
@@ -147,21 +174,21 @@
     </div>
 
     <div class="container">
-        <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-            <div id="custom-handle" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 2%;">2</div>
+        <div id="slider">
+            <div id="custom-handle" class="ui-slider-handle"></div>
         </div>
 
         <form action="#">
             <fieldset>
-                <label for="speed-button">Виберітькомп'ютер</label>
-                <select name="speed" id="speed" style="display: none;">
+                <label for="speed">Виберітькомп'ютер</label>
+                <select name="speed" id="speed">
                     <option selected="selected">настільні (desktop)</option>
                     <option>портативні (notebook)</option>
                     <option>кишенькові (palmtop)</option>
-                </select><span class="ui-selectmenu-button ui-widget ui-state-default ui-corner-all" tabindex="0" id="speed-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="speed-menu" aria-haspopup="true" style="width: 200px;" aria-activedescendant="ui-id-3" aria-labelledby="ui-id-3" aria-disabled="false"><span class="ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">настільні (desktop)</span></span>
+                </select>
             </fieldset>
         </form>
-
+        
         <div class="fotorama">
             <img src="https://b-pro.com.ua/assets/cache/images/komputerne-obladnanny/kompyuter-x-0fa.jpg" alt="">
             <img src="https://umschool.com.ua/assets/cache/images/x-noutbuk-i-3.b73.jpg" alt="">
